@@ -24,7 +24,7 @@ while True:
     jugador = input("Elige PIEDRA, PAPEL, TIJERA. EXIT para salir: ").strip().upper()
     
     if jugador == "EXIT":
-            print("\nJuego finalizado.")
+            print("\nJuego finalizado.\n")
             break
 
     if jugador != "PIEDRA" and jugador != "PAPEL" and jugador != "TIJERA":
@@ -43,7 +43,7 @@ while True:
     print("Tú sacas:", jugador)
     print("Yo saco:", ordenador)
 
-    # Comprobar resultado
+    # comprobar resultado
     if jugador == ordenador:
         print("Empate.\n")
         empates += 1
@@ -55,10 +55,19 @@ while True:
     else:
         print("Has perdido.\n")
         derrotas += 1
-
+        
+    # marcador temporal
+    print("Victorias:", victorias)
+    print("Empates:", empates)
+    print("Derrotas:", derrotas)
 
 # resultado final
 print("Victorias:", victorias)
 print("Empates:", empates)
-print("Derrotas:", derrotas)
-print("Hasta luego.")
+print("Derrotas:", derrotas, "\n")
+if victorias > derrotas:
+    print("A Winner is you!!")
+elif victorias < derrotas:
+    print("DERROTA")
+else:
+    print("Empate, ¿otra ronda?")
