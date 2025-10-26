@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 #
 # Ejercicio 5
 # Juego de piedra, papel, tijera. Se elige una jugada aleatoria entre ‘PIEDRA’, ‘PAPEL’ o ‘TIJERA’.

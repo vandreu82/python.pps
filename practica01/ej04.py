@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 #
 # Ejercicio 4
 # Conversor de divisas: USD, EUR, GBP, CAD, y JPY. Se le pasa “divisa de origen”, “divisa destino”
